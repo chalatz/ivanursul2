@@ -1,0 +1,38 @@
+.categories-nav {
+
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    &__item {
+        float: left;
+        width: 48%;
+        background-color: #f7f7f7;
+        text-align: center;
+        padding: 66px 36px;
+        margin-bottom: 16px;
+
+        &--first-in-row {
+            margin-right: 2%;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__element {
+        text-align: center;
+    }
+
+    &__title {
+        color: #545454;
+    }
+
+    &__text {
+        color: #bebebe;
+    }
+
+}
