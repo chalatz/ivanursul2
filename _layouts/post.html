@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-GB" }}">
+
+  {% include head/article.html %}
+
+  <body class="home-template">
+
+    {% include header/nav.html %}
+    
+    {% include header/info.html %}
+
+    <article class="row post">
+
+        <header class="post-header">
+          <h2>{{ page.title }}</h2>
+          <div id="share"></div>
+
+          <p class="post-info">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <time datetime="{{ page.date | date: '%Y/%m/%d' }}">
+              {{ page.date | date_to_string }}
+            </time>
+            &#160;
+            <i class="fa fa-commenting" aria-hidden="true"></i>
+            <a
+              class="comment-count"
+              href="{{ page.url | relative_url }}#disqus_thread"
+              data-disqus-identifier='{{ site.disqus_identifier_prefix }}{{ page.url | absolute_url }}/'
+            >
+              Comments
+            </a>
+            &#160;
+          </p>
+
+          {% include article_tags.html %}
+
+      </header>
+
+      {{ content }}
+
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+    </article>
+
+    {% include posts-nav.html %}
+
+    {% if site.comments %}
+      {% include comments.html %}
+    {% endif %}
+    
+    {% include footer.html %}    
+    
+    {% include scripts/article.html %}  
+
+  </body>
+
+</html>

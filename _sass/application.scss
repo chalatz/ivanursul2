@@ -1,0 +1,82 @@
+.row {
+    margin: 0 auto;
+}
+
+.blog-pagination {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.text-gray {
+    color: #999;
+}
+
+.comment-count,
+.css .nt+.nt,
+.css .o,
+.css .o+.nt {
+    color: #999
+}
+
+.header-text {
+    color: #999;
+    margin-left: 12px;
+    text-align: center;
+    margin-top: 12px
+}
+
+@media screen and (min-width:650px) {
+    body {
+        font-size: 1em;
+    }
+    .post,
+    .page {
+        width: 600px;
+    }
+    #menu span {
+        right: -72px;
+    }
+}
+
+@media screen and (min-width:985px) {
+    body {
+        font-size: 1.1em;
+    }
+    .post,
+    .page {
+        width: 800px;
+    }
+    #menu span {
+        right: -76px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    body {
+        font-size: 1.25em
+    }
+    .row,
+    .post,
+    .page {
+        width: 960px
+    }
+    #menu span {
+        right: -84px
+    }
+}
+
+.anchor {
+    color: #444
+}
+
+.pagination-nav{
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.site-footer {
+    color: #999;
+    text-align: center;
+    margin: 12px 0;
+}

@@ -1,0 +1,66 @@
+.post {
+    padding: 0 2em;
+    margin: 0 auto;
+}
+
+.post-info {
+    color: #999;
+    margin-bottom: .4em;
+}
+
+.post-header {
+    margin-bottom: 1.6em;
+}
+
+.post-title--full {
+    font-size: 1.5rem;
+    color: #272A47;
+}
+
+.post-title {
+    font-size: 1.5rem;
+    color: #272A47;
+}
+
+.post-title a {
+    font-size: 1.5rem;
+    color: #272A47;
+}
+
+.post-tags {
+    color: #999;
+}
+
+.tags-list {
+    text-align: center;
+}
+
+.tags-list__tag-name {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5em;
+    padding: .2em;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+}
+
+.posts-nav {
+    overflow: hidden;
+	padding-bottom: 2em;
+	.go-to {
+		font-weight: bold;
+		margin-top: 1.5em;
+	}
+	.left-post {
+		float: left;
+	}
+	.right-post {
+		float: right;
+	}
+}
+
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}

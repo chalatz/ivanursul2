@@ -1,0 +1,17 @@
+<script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+
+<script src="{{ '/assets/js/highlight.min.js' | relative_url }}"></script>
+
+<script src="{{ '/assets/js/jssocials.min.js' | relative_url }}"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+    $("#share").jsSocials({
+        text: "",
+            shareIn: "popup",
+            shares: ["twitter", "facebook", "googleplus", "linkedin"]
+    });	
+	</script>
+
+<script id="dsq-count-scr" src="{{ site.disqus_unique_url }}/count.js" async></script>
