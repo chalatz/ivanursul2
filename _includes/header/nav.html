@@ -1,4 +1,6 @@
 <nav class="blog-nav">
+	<a class="blog-nav__item {% if page.title == 'navigation' %} blog-nav__item--active {% endif %}" href="{{ 'navigation' | relative_url }}">navigation</a>
+	|
 	<a class="blog-nav__item {% if page.title == 'home' %} blog-nav__item--active {% endif %}" href="{{ '/' | relative_url }}">blog</a>
 	|
 	<a class="blog-nav__item {% if page.title == 'cv' %} blog-nav__item--active {% endif %}" href="{{ 'cv' | relative_url }}">cv</a>
