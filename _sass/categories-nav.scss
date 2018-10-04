@@ -11,7 +11,7 @@
         width: 48%;
         background-color: #f7f7f7;
         text-align: center;
-        padding: 66px 36px;
+        padding: 56px 36px 48px;
         margin-bottom: 16px;
         border: 1px solid #f7f7f7;
         border-radius: 2px;
@@ -47,6 +47,11 @@
 
     &__title {
         color: #545454;
+        margin-top: 12px;
+    }
+
+    &__icon {
+        min-height: 56px;
     }
 
     &__text {
