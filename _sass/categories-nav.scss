@@ -19,17 +19,13 @@
         -webkit-transition: all .2s linear;
 
         @media screen and (max-width: 985px) {
-            padding: 26px 18px;
-        }
-        
-        @media screen and (max-width: 650px) {
-            padding: 24px 12px;
+            padding: 33px 18px;
         }
 
         @media screen and (max-width: 480px) {
             display: block;
             width: 100%;
-            padding: 16px 8px;
+            //padding: 26px 12px;
         }
 
         &--first-in-row {
