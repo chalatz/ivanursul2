@@ -1,0 +1,23 @@
+.articles-summary {
+
+    &__heading {
+        color: #545454;
+    }
+
+    &__date {
+        color: #bebebe;
+        font-size: 18px;
+    }
+
+    &__summary {
+        font-size: 20px;
+        color: #545454;
+        line-height: 30px;
+    }
+
+    &__meta {
+        font-size: 18px;
+        color: #545454;
+    }
+
+}

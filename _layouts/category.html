@@ -2,4 +2,26 @@
 layout: page  
 ---
 
+<h1 class="articles-summary__heading">
+    {{ page.title }}
+</h1>
+
+<p class="articles-summary__date">
+    Recent {{ page.date }}
+</p>
+
+<p class="articles-summary__summary">
+    {{ page.summary }}
+</p>
+
+<div class="articles-summary__meta">
+    <div class="articles-summary__author">
+        By {{ page.author | default: 'ivanursul'  }}
+    </div>
+    <ul class="articles-summary__tags">
+        <li class="articles-summary__tag">kafka</li>
+        <li class="articles-summary__tag">serverless</li>
+    </ul>
+</div>
+
 {{ content }}
