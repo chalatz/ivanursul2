@@ -13,6 +13,9 @@
                 height: auto;
             }
         }
+        &--list {
+            font-size: 32px;
+        }
     }
 
     &__date {
@@ -86,6 +89,21 @@
         ol {
             font-size: 18px;
             line-height: 30px;
+        }
+    }
+
+    &__list {
+        font-size: 18px;
+        line-height: 30px;
+        
+        p,
+        a {
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        a {
+            color: #545454;
         }
     }
 
