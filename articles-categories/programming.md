@@ -1,6 +1,7 @@
 ---
 layout: category
 title: Programming
+category: programming
 permalink: /articles/programming/
 date: 2018/08/04
 author: ivanursul

@@ -7,14 +7,38 @@ layout: page
 </h1>
 
 <p class="articles-summary__date">
-    Recent {{- page.date -}}
+    Recent {{ page.date }}
 </p>
 
 <p class="articles-summary__summary">
     {{ page.summary }}
 </p>
 
+<p>
+    tags:<br>
+
+    {%- assign the_tags = '' | split: ',' -%}
+
+    page category : {{ page.category }}<br>
+
+    {%- for post in site.categories[page.category] -%}
+        -- {{ post.title }}<br>
+        {%- for tag in post.tags -%}
+           {%- assign the_tags = the_tags | push: tag -%}
+        {%- endfor -%}
+        
+    {%- endfor -%}
+
+    {%- assign the_tags_u = the_tags | uniq -%}
+
+    {%- for the_tag in the_tags_u -%}
+        {{ the_tag }},
+    {%- endfor -%}
+
+</p>
+
 <div class="articles-summary__meta">
+
     <div class="articles-summary__author">
         By {{ page.author | default: 'ivanursul'  }}
     </div>

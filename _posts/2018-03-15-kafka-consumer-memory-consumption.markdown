@@ -3,7 +3,10 @@ layout: "post"
 title:  "Kafka Consumer memory usage"
 date: 2018-03-15 00:00:00
 permalink: kafka-consumer-memory-usage
-tags: ['kafka']
+tags: ['kafka', 'aws']
+categories:
+    - 'programming'
+    - 'freelancing'
 ---
 
 I'm working with Kafka for more than 2 years and I wasn't sure if Kafka Consumer eats more RAM memory when it has more partitions. I couldn't find any useful information on the internet, so I decided to measure everything by myself.
