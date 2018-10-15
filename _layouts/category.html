@@ -1,6 +1,11 @@
 ---
 layout: page  
 ---
+{%- comment -%} create an empty array {%- endcomment -%}
+{%- assign the_tags_temp = '' | split: ',' -%}
+
+{%- comment -%} The page's category posts {%- endcomment -%}
+{%- assign the_posts = site.categories[page.category] -%}
 
 <h1 class="articles-summary__heading">
     <img src="{{- '/assets/images/back-arrows.svg' | relative_url -}}" alt=""> {{- page.title -}}
@@ -14,38 +19,13 @@ layout: page
     {{ page.summary }}
 </p>
 
-<p>
-    tags:<br>
-
-    {%- assign the_tags = '' | split: ',' -%}
-
-    page category : {{ page.category }}<br>
-
-    {%- for post in site.categories[page.category] -%}
-        -- {{ post.title }}<br>
-        {%- for tag in post.tags -%}
-           {%- assign the_tags = the_tags | push: tag -%}
-        {%- endfor -%}
-        
-    {%- endfor -%}
-
-    {%- assign the_tags_u = the_tags | uniq -%}
-
-    {%- for the_tag in the_tags_u -%}
-        {{ the_tag }},
-    {%- endfor -%}
-
-</p>
-
 <div class="articles-summary__meta">
 
     <div class="articles-summary__author">
         By {{ page.author | default: 'ivanursul'  }}
     </div>
-    <div class="articles-summary__tags">
-        <a href="#" class="articles-summary__tag">kafka</a>
-        <a href="#" class="articles-summary__tag">serverless</a>
-    </div>
+
+    {%- include article_summary-tags.html -%}
 </div>
 
 <section class="articles-summary__content">
